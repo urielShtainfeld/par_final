@@ -12,10 +12,10 @@ void read_from_file(char* file_name, vector<Point>& points, int& n, int& row_len
 	{
 
 		int name;
-		inFile >> name;
+		name = i;
 		vector<float> data;
 		//read value by value;
-		for (int j = 0; j < row_length; j++)
+		for (int j = 0; j < 4; j++)
 		{
 			float value = 0;
 			inFile >> value;
